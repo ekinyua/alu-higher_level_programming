@@ -1,10 +1,5 @@
 #!/usr/bin/python3
 
-"""
-    define a class 'Square'
-"""
-
-
 class Square:
     """
         square with private instance attribute: 'size'
@@ -16,7 +11,6 @@ class Square:
                 size (int): size of the new square
         """
         self.size = size
-
     @property
     def size(self):
         """

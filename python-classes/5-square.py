@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+# class 'Square' that defines a square by:
+# (based on 4-square.py)
+"""
+    define a class 'Square'
+"""
+
 
 class Square:
     """
@@ -11,6 +17,7 @@ class Square:
                 size (int): size of the new square
         """
         self.size = size
+
     @property
     def size(self):
         """
@@ -30,11 +37,15 @@ class Square:
         self.__size = value
 
     def area(self):
-        
+        """
+            Return: area of the square
+        """
         return (self.__size * self.__size)
 
     def my_print(self):
-    
+        """
+            prints square with character #
+        """
         for i in range(0, self.__size):
             [print("#", end="") for j in range(self.__size)]
             print("")

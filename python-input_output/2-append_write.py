@@ -5,6 +5,7 @@
     define a function 'append_write'
 """
 
+
 def append_write(filename="", text=""):
     """
         appends a string to end of text file,

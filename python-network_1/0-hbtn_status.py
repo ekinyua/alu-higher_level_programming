@@ -1,12 +1,15 @@
 
 #!/usr/bin/python3
-"""This module fetches https://intranet.hbtn.io/status"""
+"""
+This module fetches https://intranet.hbtn.io/status
+"""
 import urllib.request
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
+    request = urllib.request.Request("https://intranet.hbtn.io/status")
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
-        html = response.read()
+        body = response.read()
         print("Body response:")
         print("\t- type: {:}".format(type(html)))
         print("\t- content: {:}".format(html))
